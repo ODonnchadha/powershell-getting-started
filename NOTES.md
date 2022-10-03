@@ -39,6 +39,21 @@
     ```javascript
         $PSVersionTable
         (get-command).count
+        get-command -Name *DHCP*
     ```
+    - RSAT: Standalone tool for managing Windows Server and the associated PowerShell modules. 
+    - e.g.: GUI tools. DNS/Active Directory modules.
+
 - BASICS:
-    - 
+    - Anatomy of a PowerShell command:
+        - Syntax. Verb-Noun. Do something-To something. Get-Verb.
+        - Parameters. Pass information nto PowerShell commands. All parameters are called using a -.
+            - Common: -ComputerName -File
+        ```javascript
+            get-verb | more
+            get-verb -Verb Set | more
+            get-verb -Verb Set | format-list
+        ```
+    - Help in PowerShell:
+    - Other helpful commands & techniques:
+    - Objects & the pipeline. (PowerShell and its objects.)
